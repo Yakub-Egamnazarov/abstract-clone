@@ -1,5 +1,10 @@
 @import url(./assets/fonts/fonts.css);
 
+:root {
+  --font-family-one: "GT America Standard", sans-serif;
+  --font-family-two: "GT Super Text", serif;
+}
+
 *,
 *::before,
 *::after {
@@ -10,8 +15,18 @@
 }
 
 body {
-  background-color: #c9d5d3;
-  font-family: "GT America Standard", sans-serif;
+  font-family: var(--font-family-two);
   font-size: 16px;
   font-weight: 400;
+  background-color: #fff;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
 }
