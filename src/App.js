@@ -3,10 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Importing components
 import Header from "./components/Header/Header.jsx";
-import Hero from "./components/Hero/Hero";
-
-// Importing assets
-// import { ReactComponent as Logo } from "./assets/images/Abstract_Wordmark-White.svg";
+import Home from "./pages/Home/Home.jsx";
+import Footer from "./components/Footer/Footer";
 
 // Importing style
 import "./App.css";
@@ -17,8 +15,9 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<Hero />}></Route>
+          <Route path="/" element={<Home />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
