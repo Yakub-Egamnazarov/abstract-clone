@@ -3,6 +3,9 @@ import React from "react";
 // Importing Components for the Main page
 import Hero from "../../components/Hero/Hero";
 
+// Importing Utility components
+import SectionRadius from "../../utilities/SectionRadius/SectionRadius";
+
 // importing style for Home pages
 import "./Home.scss";
 
@@ -10,6 +13,7 @@ const Home = () => {
   return (
     <div className="Home">
       <section className="section s-hero s-hero-versions">
+        <SectionRadius />
         <Hero />
       </section>
       <div className="section s-heading-first background-blurple z-9">DIV</div>

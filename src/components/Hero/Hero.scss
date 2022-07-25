@@ -1,0 +1,63 @@
+.Hero {
+  width: 100%;
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 100rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    &-wrapper {
+      position: relative;
+      margin-right: -1rem;
+      margin-bottom: -2rem;
+      margin-left: -1rem;
+
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .text-container {
+      flex: 0 0 58.33%;
+
+      @media screen and (max-width: 1024px) {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  &__title-wrapper {
+    position: relative;
+    display: block;
+    margin-bottom: 7.5rem;
+  }
+
+  &-heading {
+    margin-top: 0px;
+    margin-bottom: 2.5;
+
+    font-size: 8rem;
+    line-height: 0.94;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+
+    span {
+      font-family: var(--font-family-two);
+      font-variant-numeric: lining-nums;
+    }
+  }
+
+  &__img {
+  }
+}
+
+.text-container {
+  position: relative;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+}
