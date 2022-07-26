@@ -1,156 +1,79 @@
 .Hero {
+  position: relative;
+
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 
   &__content {
     position: relative;
-    z-index: 1;
-    width: 100%;
+
+    width: 60%;
     max-width: 100rem;
-    margin-right: auto;
-    margin-left: auto;
-
-    display: flex;
-    flex-wrap: wrap;
-
-    &-wrapper {
-      position: relative;
-      margin-right: -1rem;
-      margin-bottom: -2rem;
-      margin-left: -1rem;
-      flex: 0 0 58.33%;
-
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    &-down {
-      margin-bottom: 2.5rem;
-      display: block;
-    }
-
-    .text-container {
-      width: 100%;
-
-      @media screen and (max-width: 1024px) {
-        padding-left: 0rem;
-        padding-right: 0rem;
-        flex-basis: 100%;
-      }
-    }
-  }
-
-  &__title-wrapper {
-    position: relative;
-    display: block;
-    margin-bottom: 7.5rem;
-  }
-
-  &-heading {
-    margin-top: 0px;
-    margin-bottom: 2.5rem;
-
-    font-size: 8rem;
-    line-height: 0.94;
-    font-weight: 400;
-    letter-spacing: -0.05em;
-
-    span {
-      font-family: var(--font-family-two);
-      font-variant-numeric: lining-nums;
-    }
-  }
-
-  &__buttons {
-    position: relative;
-    z-index: 1;
-
-    margin-right: -0.5rem;
-    margin-bottom: -1rem;
-    margin-left: 0.5rem;
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-
-  &__annotation {
-    position: absolute;
-    left: 78%;
-    top: auto;
-    right: auto;
-    bottom: -10%;
-
-    width: 30%;
-    text-align: center;
+    margin: 0 -1rem -2rem -1rem;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    &-arrow {
-      position: relative;
-      width: 30%;
-
-      svg {
-        display: block;
-        line-height: 0;
-        text-align: center;
-        overflow: hidden;
-      }
-    }
-  }
-
-  &__img-wrapper {
-    position: relative;
-
-    display: flex;
-    flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: flex-start;
-    align-items: center;
 
-    margin: 0 -1rem -2rem -1rem;
+    .Hero__title {
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
 
-    .Hero__img-logo {
-      position: inherit;
-      padding: 0 1rem 2rem 1rem;
-      flex: 1;
+    .Hero__annotation {
+      position: absolute;
+      left: 85%;
+      top: 90%;
+      right: auto;
+      bottom: auto;
 
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      justify-content: flex-start;
       align-items: center;
 
+      width: 30%;
       svg {
-        width: 100%;
-        display: inline-block;
-        vertical-align: middle;
+        width: 20%;
+      }
+
+      h2 {
+        font-size: 1.8rem;
       }
     }
-  }
 
-  &__illustration-wrapper {
-    position: absolute;
-    left: 65%;
-    top: 0%;
-    right: 0%;
-    bottom: -5rem;
-    z-index: 1;
-    overflow: hidden;
-    border-bottom-right-radius: 5rem;
+    .Hero__buttons {
+      position: relative;
+
+      margin: 0 -0.5rem 7.5rem -0.5rem;
+
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.5rem;
+    }
+
+    .Hero__information {
+      p {
+      }
+    }
+
+    .Hero__brands {
+      &--logo {
+        svg {
+        }
+      }
+    }
   }
 
   &__illustration {
     position: absolute;
-    left: 0%;
-    top: 25%;
-    right: auto;
-    bottom: auto;
-    width: 200%;
-    min-width: 55rem;
-
+    opacity: 0;
     img {
-      width: 100%;
-      max-width: 100%;
-      display: inline-block;
     }
   }
 }

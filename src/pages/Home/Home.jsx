@@ -3,9 +3,10 @@ import React from "react";
 // Importing Components for the Main page
 import Hero from "../../components/Hero/Hero";
 
-// Importing Utility components and styles
-import SectionRadius from "../../utilities/SectionRadius/SectionRadius";
-import "../../utilities/typography.scss";
+// Importing SASS component styles
+import "../../components/SASS-components/buttons.scss";
+import "../../components/SASS-components/typography.scss";
+import "../../components/SASS-components/utilities.scss";
 
 // importing style for Home pages
 import "./Home.scss";
@@ -13,9 +14,9 @@ import "./Home.scss";
 const Home = () => {
   return (
     <div className="Home">
-      <section className="section s-hero s-hero-versions">
-        <SectionRadius />
+      <section className="section s-hero s-hero-versions ">
         <Hero />
+        <div className="section--radius"></div>
       </section>
       <div className="section s-heading-first background-blurple z-9">DIV</div>
       <section className="section s-radius sr-large backgroun-blurple z-9">

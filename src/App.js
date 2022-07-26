@@ -8,7 +8,6 @@ import Footer from "./components/Footer/Footer";
 
 // Importing style
 import "./App.css";
-import "./components/ButtonsSCSS/Buttons.scss";
 
 function App() {
   return (
