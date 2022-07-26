@@ -3,8 +3,9 @@ import React from "react";
 // Importing Components for the Main page
 import Hero from "../../components/Hero/Hero";
 
-// Importing Utility components
+// Importing Utility components and styles
 import SectionRadius from "../../utilities/SectionRadius/SectionRadius";
+import "../../utilities/typography.scss";
 
 // importing style for Home pages
 import "./Home.scss";

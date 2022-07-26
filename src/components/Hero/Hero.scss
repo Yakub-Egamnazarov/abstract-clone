@@ -9,18 +9,27 @@
     margin-right: auto;
     margin-left: auto;
 
+    display: flex;
+    flex-wrap: wrap;
+
     &-wrapper {
       position: relative;
       margin-right: -1rem;
       margin-bottom: -2rem;
       margin-left: -1rem;
+      flex: 0 0 58.33%;
 
       display: flex;
       flex-wrap: wrap;
     }
 
+    &-down {
+      margin-bottom: 2.5rem;
+      display: block;
+    }
+
     .text-container {
-      flex: 0 0 58.33%;
+      width: 100%;
 
       @media screen and (max-width: 1024px) {
         padding-left: 0rem;
@@ -91,21 +100,57 @@
     }
   }
 
-  &__img {
+  &__img-wrapper {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 0 -1rem -2rem -1rem;
+
+    .Hero__img-logo {
+      position: inherit;
+      padding: 0 1rem 2rem 1rem;
+      flex: 1;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
   }
-}
 
-.text-container {
-  position: relative;
-  padding-right: 1rem;
-  padding-bottom: 2rem;
-  padding-left: 1rem;
-}
+  &__illustration-wrapper {
+    position: absolute;
+    left: 65%;
+    top: 0%;
+    right: 0%;
+    bottom: -5rem;
+    z-index: 1;
+    overflow: hidden;
+    border-bottom-right-radius: 5rem;
+  }
 
-.text-annotation {
-  font-size: 2rem;
-  line-height: 1.4;
-  font-family: var(--font-family-handwriting);
-  text-align: center;
-  letter-spacing: -0.02em;
+  &__illustration {
+    position: absolute;
+    left: 0%;
+    top: 25%;
+    right: auto;
+    bottom: auto;
+    width: 200%;
+    min-width: 55rem;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      display: inline-block;
+    }
+  }
 }
