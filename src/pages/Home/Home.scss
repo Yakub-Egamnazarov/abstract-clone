@@ -72,6 +72,12 @@
       border-bottom-left-radius: 5rem;
       border-bottom-right-radius: 5rem;
 
+      @media screen and (max-width: 767px) {
+        padding-bottom: 5rem;
+        border-bottom-left-radius: 2.5rem;
+        border-bottom-right-radius: 2.5rem;
+      }
+
       &.sr-large {
         padding-top: 4rem;
       }

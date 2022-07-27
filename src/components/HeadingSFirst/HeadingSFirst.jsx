@@ -1,8 +1,8 @@
 import React from "react";
 
-import "./HeadingS.scss";
+import "./HeadingSFirst.scss";
 
-const HeadingS = () => {
+const HeadingSFirst = () => {
   return (
     <div className="section-two bg-blurple">
       <div className="section-two__bg-extension bg-blurple"></div>
@@ -34,4 +34,4 @@ const HeadingS = () => {
   );
 };
 
-export default HeadingS;
+export default HeadingSFirst;

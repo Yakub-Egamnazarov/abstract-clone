@@ -16,7 +16,7 @@ const SectionTwo = () => {
             <div className="ico-illustration space-bottom-s">
               <IconClockSvg />
             </div>
-            <h3 className="text-heading-s space-bottom-s">
+            <h3 className="text--heading-s space-bottom-s">
               Less file. More flow.
             </h3>
             <div className="text-main space-bottom-s">
@@ -28,7 +28,7 @@ const SectionTwo = () => {
             <div className="ico-illustration space-bottom-s">
               <IconPlantSvg />
             </div>
-            <h3 className="text-heading-s space-bottom-s">
+            <h3 className="text--heading-s space-bottom-s">
               Design together, in real time.
             </h3>
             <div className="text-main space-bottom-s">
@@ -41,7 +41,7 @@ const SectionTwo = () => {
             <div className="ico-illustration space-bottom-s">
               <IconSyncSvg />
             </div>
-            <h3 className="text-heading-s space-bottom-s">
+            <h3 className="text--heading-s space-bottom-s">
               Iterate with context.
             </h3>
             <div className="text-main space-bottom-s">

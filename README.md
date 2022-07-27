@@ -28,6 +28,21 @@ The following breakpoints added to the media queries:
 - max-width: 767px (tablet-portrait)
 - max-width: 479px (mobile)
 
+### 5. Section coming after the hero section
+
+To implement the sliding-up effect the following technique is used:
+
+- on the upper side of the actual section created pseudo-section, div element, to immitate some spacing
+- to the actual section, on the bottom side of hero, added _position: sticky_ property added
+- and with spacing SCSS utilites adjusted, the sliding-up effect is created
+
+Also created reusabel container SCSS components and spacing utilities like:
+
+- .container-max
+- .col (.col-4-d) etc.
+- spacing-bottom-s (etc.)
+- z-9 (z-index: 9;)
+
 ---
 
 ## NOTES
@@ -35,7 +50,7 @@ The following breakpoints added to the media queries:
 Importing svg elements into the react app is easier through react component
 
 ```js
-import { ReactComponent as Logo } from "paht";
+import { ReactComponent as Logo } from "path";
 ```
 
 ---
