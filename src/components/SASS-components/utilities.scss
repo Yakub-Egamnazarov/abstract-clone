@@ -18,3 +18,16 @@
     z-index: -1;
   }
 }
+
+.bg-blurple {
+  background-color: #dadbf1;
+}
+
+.container-max {
+  position: relative;
+
+  width: 100%;
+  max-width: 100rem;
+  margin-right: auto;
+  margin-left: auto;
+}

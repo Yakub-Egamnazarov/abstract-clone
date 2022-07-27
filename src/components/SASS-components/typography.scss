@@ -13,6 +13,14 @@
   }
 }
 
+.text--heading-xl {
+  margin-top: 0;
+  font-size: 4rem;
+  line-height: 1.25;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+
 .text--gtsuper {
   font-family: var(--font-family-two);
   font-variant-numeric: lining-nums;

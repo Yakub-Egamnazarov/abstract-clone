@@ -1,4 +1,4 @@
-# ![Abstract Logo](./src/assets/favicon.png) ABSTRACT website clone by react app.
+# ![Abstract Logo](./src/assets/images/favicon.png) ABSTRACT website clone by react app.
 
 [Abstract Website](https://www.abstract.com/)
 
@@ -6,12 +6,7 @@
 
 - React App
 - SAAS
-
----
-
-## BUG
-
-## TODO
+- react-router-dom
 
 ---
 
@@ -25,15 +20,35 @@
 
 ### 4. Hero Section together with navbar at the main PAGE.
 
+Hero section implemented with responsive design as in the original website.
+The following breakpoints added to the media queries:
+
+- min-width: 1440px (big-desktop-screen)
+- max-width: 1024px (tablet-landscape)
+- max-width: 767px (tablet-portrait)
+- max-width: 479px (mobile)
+
+---
+
+## NOTES
+
 Importing svg elements into the react app is easier through react component
 
 ```js
-import { ReactComponent as Lodo } from "paht";
+import { ReactComponent as Logo } from "paht";
 ```
 
-### Using Fonts
+---
+
+## Fonts
 
 in original website it is used GT America font face as main, and GT Super font face as secondary, for titles etc. Grilli type faces, using only as trial variant for learning purposes. [Grilli website](grillitype.com)
 
 Inside the assets file created a folder for a custom fonts dowloaded from [Grilli](grillitype.com) trial version and put all the WOF2 files inside this folders. Created fonts.css so it could be easier to upload those file into index.css file.
 In this project mainly used two fonts, GT America Standard and GT Supet Text. I checked, in this project they work.
+
+Following fonts are used in the website:
+
+- GT America Standard (main)
+- GT Super Text (secondary)
+- Caveat Google Font (cursive style) for annotation ads.

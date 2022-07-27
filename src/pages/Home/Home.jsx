@@ -2,11 +2,13 @@ import React from "react";
 
 // Importing Components for the Main page
 import Hero from "../../components/Hero/Hero";
+import HeadingS from "../..//components/HeadingS/HeadingS";
 
 // Importing SASS component styles
 import "../../components/SASS-components/buttons.scss";
 import "../../components/SASS-components/typography.scss";
 import "../../components/SASS-components/utilities.scss";
+import "../../components/SASS-components/col-grids.scss";
 
 // importing style for Home pages
 import "./Home.scss";
@@ -18,8 +20,11 @@ const Home = () => {
         <Hero />
         <div className="section--radius"></div>
       </section>
-      <div className="section s-heading-first background-blurple z-9">DIV</div>
-      <section className="section s-radius sr-large backgroun-blurple z-9">
+      <HeadingS />
+      <section className="section section-two s-radius sr-large bg-blurple z-9">
+        Section
+      </section>
+      <section className="section section-two s-radius sr-large bg-blurple z-9">
         Section
       </section>
       <div className="section-s-heading-first background-kelp z-8">DIV</div>

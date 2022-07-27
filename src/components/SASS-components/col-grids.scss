@@ -1,0 +1,33 @@
+.flex-grid {
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.col-wrapper {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-right: -1rem;
+  margin-bottom: -2rem;
+  margin-left: -1rem;
+}
+
+.col {
+  position: relative;
+
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+
+  flex: 1;
+}
+
+.col-8-d {
+  flex: 0 0 66.66%;
+}
+
+.col-12-d {
+  flex: 0 0 100%;
+}
