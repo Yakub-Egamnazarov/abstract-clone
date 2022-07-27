@@ -82,5 +82,21 @@
         padding-top: 4rem;
       }
     }
+
+    &.s-heading {
+      position: sticky;
+      bottom: 0%;
+
+      padding-top: 10rem;
+      padding-bottom: 1rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      @media screen and (max-width: 767px) {
+        padding-top: 7.5rem;
+      }
+    }
   }
 }

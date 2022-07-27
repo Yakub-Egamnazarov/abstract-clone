@@ -34,6 +34,21 @@
   @media screen and (max-width: 479px) {
     font-size: 2.75rem;
   }
+
+  &-super-script {
+    display: inline-block;
+    font-size: 1rem;
+    transform: translate(4px, -32px);
+
+    @media screen and (max-width: 1024px) {
+      transform: transform(0, 24px);
+    }
+
+    @media screen and (max-width: 767px) {
+      transform: translate(0 18px);
+      font-size: 0.8rem;
+    }
+  }
 }
 
 .text--heading-s {
@@ -60,4 +75,16 @@
   font-size: 1.25rem;
   line-height: 1.4;
   letter-spacing: -0.01em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }

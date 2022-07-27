@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="Hero__content">
         <div className="Hero__title">
           <h1 className="text--title">
-            <span className="text--gtsuper">True Version control '</span>
+            <span className="text--gtsuper">True Version control </span>
             for Sketch files
           </h1>
           <div className="Hero__annotation">

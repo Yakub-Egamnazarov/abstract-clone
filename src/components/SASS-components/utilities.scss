@@ -23,6 +23,18 @@
   background-color: #dadbf1;
 }
 
+.bg-white {
+  background-color: #fff;
+}
+
+.z-7 {
+  position: relative;
+  z-index: 7;
+
+  transform: translate3d(0px, 0px, 7px);
+  transform-style: preserve-3d;
+}
+
 .z-9 {
   position: relative;
   z-index: 9;
