@@ -1,6 +1,4 @@
 .Hero {
-  position: relative;
-
   width: 100%;
   display: flex;
   align-items: center;
@@ -58,13 +56,31 @@
     }
 
     .Hero__information {
-      p {
-      }
+      margin-bottom: 2.5rem;
     }
 
     .Hero__brands {
+      position: relative;
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      margin: 0 -1rem -2rem -1rem;
+
       &--logo {
+        flex: 1;
+
+        position: relative;
+
+        padding: 0 1rem 2rem 1rem;
+        text-rendering: optimizeLegibility;
+
         svg {
+          width: 100%;
+          text-align: center;
         }
       }
     }
@@ -72,8 +88,23 @@
 
   &__illustration {
     position: absolute;
-    opacity: 0;
+    left: 65%;
+    top: 0;
+    right: 0;
+    bottom: -5rem;
+    z-index: 1;
+    overflow: hidden;
+    border-bottom-right-radius: 5rem;
+
     img {
+      position: absolute;
+      left: 0;
+      top: 20%;
+      right: auto;
+      bottom: auto;
+
+      width: 200%;
+      min-width: 55rem;
     }
   }
 }

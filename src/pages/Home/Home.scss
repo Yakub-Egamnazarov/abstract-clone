@@ -5,21 +5,22 @@
 
   .section {
     position: relative;
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
+    padding: 0 2.5rem;
     width: 100%;
 
     &.s-hero {
       z-index: 10;
 
-      display: flex;
       min-height: 100vh;
-      margin-top: 0rem;
-      padding-top: 10rem;
-      padding-bottom: 7.5rem;
+
+      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      margin-top: 0rem;
+      padding-top: 10rem;
+      padding-bottom: 7.5rem;
       background-color: #000;
       color: #fff;
       transform: translate3d(0px, 0px, 10px);
