@@ -8,6 +8,21 @@
     padding: 0 2.5rem;
     width: 100%;
 
+    @media screen and (min-width: 1440px) {
+      padding-right: 5rem;
+      padding-left: 5rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+
+    @media screen and (max-width: 479px) {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+    }
+
     &.s-hero {
       z-index: 10;
 
