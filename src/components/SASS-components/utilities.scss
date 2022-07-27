@@ -23,19 +23,16 @@
   background-color: #dadbf1;
 }
 
-.container-max {
+.z-9 {
   position: relative;
+  z-index: 9;
 
-  width: 100%;
-  max-width: 100rem;
-  margin-right: auto;
-  margin-left: auto;
+  transform: translate3d(0px, 0px, 9px);
+  transform-style: preserve-3d;
+}
 
-  @media screen and (min-width: 1280px) {
-    overflow: visible;
-  }
-
-  @media screen and (max-width: 1024px) {
-    max-width: none;
-  }
+.space-bottom-s {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
 }

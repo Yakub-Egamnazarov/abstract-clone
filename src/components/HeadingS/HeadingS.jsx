@@ -24,7 +24,6 @@ const HeadingS = () => {
                       shouldn't be extra work
                     </h2>
                   </div>
-                  {/* <div className="col"></div> */}
                 </div>
               </div>
             </div>

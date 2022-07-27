@@ -1,3 +1,20 @@
+.container-max {
+  position: relative;
+
+  width: 100%;
+  max-width: 100rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 1280px) {
+    overflow: visible;
+  }
+
+  @media screen and (max-width: 1024px) {
+    max-width: none;
+  }
+}
+
 .flex-grid {
   position: relative;
   flex-wrap: wrap;
@@ -22,6 +39,10 @@
   padding-left: 1rem;
 
   flex: 1;
+}
+
+.col-4-d {
+  flex: 0 0 33.32%;
 }
 
 .col-8-d {

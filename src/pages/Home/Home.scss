@@ -47,5 +47,19 @@
         }
       }
     }
+
+    &.s-radius {
+      padding-bottom: 15rem;
+
+      flex-direction: column;
+      justify-content: center;
+
+      border-bottom-left-radius: 5rem;
+      border-bottom-right-radius: 5rem;
+
+      &.sr-large {
+        padding-top: 4rem;
+      }
+    }
   }
 }
