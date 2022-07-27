@@ -10,4 +10,11 @@
   border-bottom-left-radius: 5rem;
   border-bottom-right-radius: 5rem;
   background-color: #000;
+
+  @media screen and (max-width: 767px) {
+    height: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    z-index: -1;
+  }
 }

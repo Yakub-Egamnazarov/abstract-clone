@@ -21,7 +21,7 @@
     justify-content: flex-start;
 
     @media screen and (max-width: 1024px) {
-      mwx-width: none;
+      max-width: none;
       width: 100%;
       margin-right: 0;
       margin-left: 0;
@@ -29,6 +29,18 @@
 
       align-items: center;
       text-align: center;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 5rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+
+    @media screen and (max-width: 479px) {
+      margin-bottom: 2.5rem;
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
     }
 
     .Hero__title {
@@ -48,11 +60,10 @@
       justify-content: flex-start;
       align-items: center;
 
-      width: 30%;
+      width: 25%;
+      text-align: center;
       @media screen and (max-width: 1024px) {
-        left: 75%;
-        top: 65%;
-        width: 20%;
+        display: none;
       }
 
       svg {
@@ -77,6 +88,10 @@
 
       @media screen and (max-width: 1024px) {
         margin-bottom: 4rem;
+      }
+
+      @media screen and (max-width: 479px) {
+        justify-content: center;
       }
     }
 
@@ -106,6 +121,10 @@
         @media screen and (max-width: 1024px) {
           flex-shrink: 0;
           flex-basis: 33.32%;
+        }
+
+        @media screen and (max-width: 479px) {
+          flex-basis: 50%;
         }
 
         svg {
@@ -138,6 +157,22 @@
       border-bottom-right-radius: 0;
     }
 
+    @media screen and (max-width: 767px) {
+      top: 2.5rem;
+      margin-top: 0rem;
+      margin-right: -2rem;
+      margin-left: -2rem;
+      border-bottom-left-radius: 2.5rem;
+      border-bottom-right-radius: 2.5rem;
+    }
+
+    @media screen and (max-width: 479px) {
+      margin-right: -1.5rem;
+      margin-left: -1.5rem;
+      border-bottom-left-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem;
+    }
+
     img {
       position: absolute;
       left: 0;
@@ -155,6 +190,11 @@
         right: auto;
         width: 100%;
         min-width: auto;
+      }
+
+      @media screen and (max-width: 767px) {
+        min-width: 0rem;
+        height: 100%;
       }
     }
   }

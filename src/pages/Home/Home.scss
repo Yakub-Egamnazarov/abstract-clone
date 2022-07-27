@@ -25,6 +25,11 @@
       color: #fff;
       transform: translate3d(0px, 0px, 10px);
 
+      @media screen and (min-width: 1440px) {
+        padding-right: 5rem;
+        padding-left: 5rem;
+      }
+
       @media screen and (max-width: 1024px) {
         height: 100%;
         padding-right: 2.5rem;
@@ -32,16 +37,11 @@
       }
 
       @media screen and (max-width: 767px) {
-        padding-right: 2rem;
-        padding-left: 2rem;
+        padding-right: 0;
+        padding-left: 0;
       }
 
-      @media screen and (max-width: 479px) {
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
-      }
-
-      &.s-versions {
+      &-versions {
         @media screen and (max-width: 767px) {
           padding-bottom: 0;
         }
