@@ -3,6 +3,10 @@
   line-height: 0.94;
   font-weight: 400;
   letter-spacing: -0.05em;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 5rem;
+  }
 }
 
 .text--gtsuper {

@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: flex-start;
 
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+
   &__content {
     position: relative;
 
@@ -15,6 +19,17 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+
+    @media screen and (max-width: 1024px) {
+      mwx-width: none;
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+      padding-bottom: 2rem;
+
+      align-items: center;
+      text-align: center;
+    }
 
     .Hero__title {
       margin-bottom: 2.5rem;
@@ -34,6 +49,12 @@
       align-items: center;
 
       width: 30%;
+      @media screen and (max-width: 1024px) {
+        left: 75%;
+        top: 65%;
+        width: 20%;
+      }
+
       svg {
         width: 20%;
       }
@@ -53,6 +74,10 @@
       align-items: center;
       justify-content: flex-start;
       gap: 0.5rem;
+
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 4rem;
+      }
     }
 
     .Hero__information {
@@ -78,6 +103,11 @@
         padding: 0 1rem 2rem 1rem;
         text-rendering: optimizeLegibility;
 
+        @media screen and (max-width: 1024px) {
+          flex-shrink: 0;
+          flex-basis: 33.32%;
+        }
+
         svg {
           width: 100%;
           text-align: center;
@@ -96,6 +126,18 @@
     overflow: hidden;
     border-bottom-right-radius: 5rem;
 
+    @media screen and (max-width: 1024px) {
+      position: relative;
+      top: auto;
+      left: auto;
+      right: auto;
+      bottom: auto;
+
+      width: 100%;
+      margin-top: 4rem;
+      border-bottom-right-radius: 0;
+    }
+
     img {
       position: absolute;
       left: 0;
@@ -105,6 +147,15 @@
 
       width: 200%;
       min-width: 55rem;
+
+      @media screen and (max-width: 1024px) {
+        position: relative;
+        left: auto;
+        top: auto;
+        right: auto;
+        width: 100%;
+        min-width: auto;
+      }
     }
   }
 }
