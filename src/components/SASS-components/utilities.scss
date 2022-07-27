@@ -19,6 +19,7 @@
   }
 }
 
+// Colors
 .bg-blurple {
   background-color: #dadbf1;
 }
@@ -27,6 +28,7 @@
   background-color: #fff;
 }
 
+// Z-index
 .z-7 {
   position: relative;
   z-index: 7;
@@ -43,8 +45,23 @@
   transform-style: preserve-3d;
 }
 
+// Spacing
 .space-bottom-s {
   position: relative;
   z-index: 1;
   margin-bottom: 1rem;
+}
+
+.space-0 {
+  margin: 0;
+}
+
+.space-inner-0 {
+  padding: 0;
+}
+
+// Block types
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block;
 }

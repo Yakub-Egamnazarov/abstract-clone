@@ -3,9 +3,10 @@ import React from "react";
 // Importing Components for the Main page
 import Hero from "../../components/Hero/Hero";
 import HeadingSFirst from "../../components/HeadingSFirst/HeadingSFirst";
-import HeadingSSecong from "../../components/HeadingSSecond/HeadingSSecond";
+import HeadingSSecond from "../../components/HeadingSSecond/HeadingSSecond";
 
 import SectionTwo from "../../components/SectionTwo/SectionTwo";
+import SectionThree from "../../components/SectionThree/SectionThree";
 
 // Importing SASS component styles
 import "../../components/SASS-components/buttons.scss";
@@ -27,8 +28,10 @@ const Home = () => {
       <section className="section s-radius sr-large bg-blurple z-9">
         <SectionTwo />
       </section>
-      <HeadingSSecong />
-      <section></section>
+      <HeadingSSecond />
+      <section className="section s-radius sr-large s-last bg-white">
+        <SectionThree />
+      </section>
     </div>
   );
 };
