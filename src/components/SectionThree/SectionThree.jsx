@@ -8,44 +8,59 @@ import LinkRow from "./LinkRow";
 
 // Importing svg logos
 import { ReactComponent as Cisco } from "../../assets/images/logo-cisco-black.svg";
+import { ReactComponent as SFSVG } from "../../assets/images/logo-sf-black.svg";
+import { ReactComponent as BHSVG } from "../../assets/images/logo-bh-black.svg";
 
 // TODO HOW to send SVG react component as a props
 
-const storyContent = {
-  cisco: {
-    img: Cisco,
+const storyContent = [
+  {
+    companyName: "Cisco",
+    companyLogo: Cisco,
+    companyID: "001",
     heading: "Design system management",
     desc: "How Cisco built an enterprise global design system",
-    name: "Cisco",
+    storyURL: "/",
   },
-  sf: {
-    img: "../../assets/images/logo-sf-black.svg",
+
+  {
+    companyName: "Saleforce",
+    companyLogo: SFSVG,
+    companyID: "002",
     heading: "Radical transparency",
     desc: "How designers at Salesforce fostered trust and teamwork",
-    name: "Saleforce",
+    storyURL: "/",
   },
-  bh: {
-    img: "../../assets/images/logo-bh-black.svg",
+
+  {
+    companyName: "Banner Health",
+    companyLogo: BHSVG,
+    companyID: "003",
     heading: "Remote collaboration",
     desc: "How Banner Health is navigating the remote future no one planned for",
-    name: "Banner Health",
+    storyURL: "/",
   },
-};
+];
 
 const SectionThree = () => {
   return (
     <div className="container-max">
       <div className="flex-grid">
-        <div className="col col-12-d col-4-ds">
-          <Link to="/" className="versions-design-team w-inline-block">
-            <LinkRow
-              name={storyContent.cisco.name}
-              heading={storyContent.cisco.heading}
-              desc={storyContent.cisco.desc}
-              Icon={storyContent.cisco.img}
-            />
-          </Link>
-        </div>
+        {storyContent.map((company) => (
+          <div className="col col-12-d col-4-ds" key={`${company.companyID}`}>
+            <Link
+              to={`${company.storyURL}`}
+              className="versions-design-team w-inline-block"
+            >
+              <LinkRow
+                name={company.companyName}
+                heading={company.heading}
+                desc={company.desc}
+                Icon={company.companyLogo}
+              />
+            </Link>
+          </div>
+        ))}
       </div>
     </div>
   );

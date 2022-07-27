@@ -54,3 +54,21 @@
     }
   }
 }
+
+.text-link {
+  position: relative;
+  color: #4c5fd5;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.tl-alt {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

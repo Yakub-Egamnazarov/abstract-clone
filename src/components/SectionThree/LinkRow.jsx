@@ -13,7 +13,7 @@ const LinkRow = ({ name, heading, desc, Icon }) => {
         </div>
         <div className="col space-inner-0 col-3-d col-6-ds col-6-ml">
           <div className="versions-design-team-block vdbt-feature">
-            <h3 className="heading-s versions-design-team-heading">
+            <h3 className="text--heading-s versions-design-team-heading">
               {heading}
             </h3>
           </div>

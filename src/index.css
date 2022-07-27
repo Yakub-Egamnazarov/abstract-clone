@@ -36,3 +36,7 @@ img {
   vertical-align: middle;
   border: 0;
 }
+
+a {
+  color: inherit;
+}
