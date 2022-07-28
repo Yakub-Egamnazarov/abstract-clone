@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 // Importing card component
-import CtaCard from "./CTAcard";
+import CTACard from "./CTAcard";
 
 // Importing assets
 import cardOneImg from "../../assets/images/UseCases_Present_Header.svg";
@@ -48,14 +47,14 @@ const ctaContent = {
 const SectionC = () => {
   return (
     <div className="c-section c-section-content wf-section">
-      <div className="c-grid c-grid_contentcta">
-        <h4 className="c-contentcta_title">
+      <div className="c-grid c-grid-contentcta">
+        <h4 className="c-contentcta-title">
           {ctaContent.heading}
           <span className="c-text-serif">{ctaContent.headingSpan}</span>
         </h4>
-        <p className="c-contentcta_desc">{ctaContent.desc}</p>
+        <p className="c-contentcta-desc">{ctaContent.desc}</p>
         {ctaContent.cardContent.map((card) => (
-          <CtaCard
+          <CTACard
             imgObj={card.imgObj}
             imgAlt={card.imgAlt}
             cardHeading={card.cardHeading}

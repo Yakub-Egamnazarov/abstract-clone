@@ -95,3 +95,156 @@
     margin-top: 0.5rem;
   }
 }
+
+// Basic typography
+h4 {
+  margin-top: 0px;
+  margin-bottom: 0rem;
+  font-size: 10px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+h5 {
+  margin-top: 0px;
+  margin-bottom: 0rem;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+// C-SECTION typography
+.c-contentcta-title {
+  position: relative;
+  font-size: 5.4vw;
+  line-height: 1;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: -0.04em;
+
+  grid-column-start: 2;
+  grid-column-end: 14;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 11vw;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 11vw;
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 11vw;
+  }
+}
+
+.c-text-serif {
+  font-family: var(--font-family-two);
+}
+
+.c-contentcta-desc {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 3vw;
+  font-size: 2vw;
+  text-align: center;
+
+  grid-column-end: 11;
+  grid-column-start: 5;
+  grid-row-end: 3;
+  grid-row-start: 2;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 4vw;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 4.2vw;
+  }
+  @media screen and (max-width: 479px) {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.c-contentcta_card {
+  &_title {
+    position: relative;
+    width: 100%;
+    padding: 1vw;
+    border-bottom: 2px solid #000;
+    font-size: 2vw;
+    line-height: 1.2;
+    font-weight: 500;
+
+    @media screen and (min-width: 1280px) {
+      width: 50%;
+      border-right: 2px solid #000;
+      border-bottom-style: none;
+      border-bottom-width: 0px;
+      font-size: 1.6vw;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding: 2vw;
+      font-size: 5vw;
+    }
+    @media screen and (max-width: 767px) {
+      padding: 0.5rem;
+    }
+    @media screen and (max-width: 479px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &_desc {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0rem;
+    padding: 1vw;
+    font-size: 1.5vw;
+
+    @media screen and (min-width: 1280px) {
+      width: 50%;
+      font-size: 1.125vw;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding: 2vw;
+      font-size: 3vw;
+    }
+    @media screen and (max-width: 767px) {
+      padding: 0.5rem;
+    }
+    @media screen and (max-width: 479px) {
+      font-size: 1rem;
+    }
+  }
+
+  &_btn {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0rem;
+    padding: 1vw;
+    border-top: 2px solid #000;
+    color: #4c5fd5;
+    font-size: 1.5vw;
+    font-weight: 500;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 1.125vw;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 2vw;
+    font-size: 3vw;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 0.5rem;
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 1rem;
+  }
+}
