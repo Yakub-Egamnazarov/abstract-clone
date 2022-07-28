@@ -4,6 +4,7 @@ import React from "react";
 import Hero from "../../components/Hero/Hero";
 import HeadingSFirst from "../../components/HeadingSFirst/HeadingSFirst";
 import HeadingSSecond from "../../components/HeadingSSecond/HeadingSSecond";
+import CSection from "../../components/CSection/CSection";
 
 import SectionTwo from "../../components/SectionTwo/SectionTwo";
 import SectionThree from "../../components/SectionThree/SectionThree";
@@ -32,6 +33,7 @@ const Home = () => {
       <section className="section s-radius sr-large s-last bg-white">
         <SectionThree />
       </section>
+      <CSection />
     </div>
   );
 };
