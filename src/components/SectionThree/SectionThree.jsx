@@ -46,21 +46,23 @@ const SectionThree = () => {
   return (
     <div className="container-max">
       <div className="flex-grid">
-        {storyContent.map((company) => (
-          <div className="col col-12-d col-4-ds" key={`${company.companyID}`}>
-            <Link
-              to={`${company.storyURL}`}
-              className="versions-design-team w-inline-block"
-            >
-              <LinkRow
-                name={company.companyName}
-                heading={company.heading}
-                desc={company.desc}
-                Icon={company.companyLogo}
-              />
-            </Link>
-          </div>
-        ))}
+        <div className="col-wrapper">
+          {storyContent.map((company) => (
+            <div className="col col-12-d col-4-ds" key={`${company.companyID}`}>
+              <Link
+                to={`${company.storyURL}`}
+                className="versions-design-team w-inline-block"
+              >
+                <LinkRow
+                  name={company.companyName}
+                  heading={company.heading}
+                  desc={company.desc}
+                  Icon={company.companyLogo}
+                />
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

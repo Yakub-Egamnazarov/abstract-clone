@@ -101,6 +101,10 @@
 
     &.s-last {
       padding-bottom: 12.5rem;
+
+      @media screen and (max-width: 479px) {
+        padding-bottom: 5rem;
+      }
     }
 
     &.sr-large {

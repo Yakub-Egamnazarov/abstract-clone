@@ -53,9 +53,28 @@
   flex: 0 0 33.32%;
 }
 
+.col-4-ds {
+  @media screen and (min-width: 1228px) {
+    flex: 0 0 33.32% !important;
+  }
+}
+
 .col-5-d {
   flex: 0 0 41.65%;
 }
+.col-6-ml {
+  @media screen and (max-width: 767px) {
+    flex-shrink: 0;
+    flex-basis: 50%;
+  }
+}
+
+.col-6-ds {
+  @media screen and (min-width: 1228px) {
+    flex: 0 0 50%;
+  }
+}
+
 .col-8-d {
   flex: 0 0 66.66%;
 }
@@ -68,5 +87,11 @@
   @media screen and (max-width: 767px) {
     flex-shrink: 0;
     flex-basis: 100%;
+  }
+}
+
+.col-12-ds {
+  @media screen and (min-width: 1228px) {
+    flex: 0 0 100%;
   }
 }
