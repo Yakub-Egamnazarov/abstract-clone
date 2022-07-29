@@ -51,6 +51,23 @@
   }
 }
 
+.text-heading-l {
+  margin-top: 0;
+  font-size: 4rem;
+  line-height: 0.94;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+
+  @media screen and (max-width: 767px) {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+
+  @media screen and (max-width: 479px) {
+    font-size: 3.5rem;
+  }
+}
+
 .text--heading-s {
   margin-top: 0;
   font-size: 1.5rem;

@@ -5,6 +5,7 @@ import Hero from "../../components/Hero/Hero";
 import HeadingSFirst from "../../components/HeadingSFirst/HeadingSFirst";
 import HeadingSSecond from "../../components/HeadingSSecond/HeadingSSecond";
 import CSection from "../../components/CSection/CSection";
+import PricingCTA from "../../components/PricingCTA/PricingCTA";
 
 import SectionTwo from "../../components/SectionTwo/SectionTwo";
 import SectionThree from "../../components/SectionThree/SectionThree";
@@ -34,6 +35,7 @@ const Home = () => {
         <SectionThree />
       </section>
       <CSection />
+      <PricingCTA />
     </div>
   );
 };

@@ -1,0 +1,18 @@
+.pricing-cta {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 10rem;
+    padding-bottom: 9rem;
+
+    background-color: #dadbf1;
+  }
+
+  &-heading {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+}
