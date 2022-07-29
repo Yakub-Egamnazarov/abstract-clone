@@ -38,6 +38,12 @@
       padding-bottom: 3.25rem;
     }
   }
+
+  &.c-section_footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    // background-color: #000
+  }
 }
 
 .c-grid {
@@ -60,6 +66,20 @@
   @media screen and (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+  }
+
+  &.c-grid_footer {
+    @media screen and (max-width: 1024px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &.c-grid_footer {
+    @media screen and (max-width: 1024px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 }
 
