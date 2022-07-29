@@ -53,13 +53,14 @@ const SectionC = () => {
           <span className="c-text-serif">{ctaContent.headingSpan}</span>
         </h4>
         <p className="c-contentcta-desc">{ctaContent.desc}</p>
-        {ctaContent.cardContent.map((card) => (
+        {ctaContent.cardContent.map((card, i) => (
           <CTACard
             imgObj={card.imgObj}
             imgAlt={card.imgAlt}
             cardHeading={card.cardHeading}
             cardDesc={card.cardDesc}
             linkText={card.linkText}
+            cardNo={i}
             key={card.keyId}
           />
         ))}

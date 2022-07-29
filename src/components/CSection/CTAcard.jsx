@@ -1,9 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const CTAcard = ({ imgObj, imgAlt, cardHeading, cardDesc, linkText }) => {
+const CTAcard = ({
+  imgObj,
+  imgAlt,
+  cardHeading,
+  cardDesc,
+  linkText,
+  cardNo,
+}) => {
   return (
-    <div className="c-contentcta_card c-contentcta_card1">
+    <div className={`c-contentcta_card c-contentcta_card${cardNo + 1}`}>
       <Link to="/" className="c-contentcta_link w-inline-block">
         <img src={imgObj} alt={imgAlt} className="c-contentcta_card_img" />
         <div className="c-contentcta_card_desccontainer">
