@@ -26,7 +26,11 @@ const Footer = () => {
         <div className="c-grid c-grid_footer">
           <div className="c-footer_col c-footer_col1">
             <Link to="/" className="c-footer_logolink">
-              <img src={abstractLogo} alt="" className="c-footer_logo" />
+              <img
+                src={abstractLogo}
+                alt="Abstract Logo"
+                className="c-footer_logo"
+              />
             </Link>
             <div className="c-footer_copyright">
               © Copyright 2022
@@ -36,8 +40,42 @@ const Footer = () => {
               ‍All rights reserved
             </div>
           </div>
-          <div className="c-footer_col">
-            <h6 className="c-footer_columntitle">Resources</h6>
+          <div className="c-footer_col c-footer_col2">
+            <h6 className="c-footer_col_title">Resources</h6>
+            {resources.map((link) => (
+              <Link to="/" className="c-footer_link">
+                {link}
+              </Link>
+            ))}
+          </div>
+          <div className="c-footer_col c-footer_col3">
+            <h6 className="c-footer_col_title">Company</h6>
+            {company.map((link) => (
+              <Link to="/" className="c-footer_link">
+                {link}
+              </Link>
+            ))}
+            <h6 className="c-footer_col_title">Contact Us</h6>
+            {contactUs.map((link) => (
+              <Link to="/" className="c-footer_link">
+                {link}
+              </Link>
+            ))}
+          </div>
+          <div className="c-footer_col c-footer_col4">
+            <h6 className="c-footer_col_title">Social</h6>
+            {social.map((link) => (
+              <Link to="/" className="c-footer_link">
+                {link}
+              </Link>
+            ))}
+          </div>
+          <div className="c-footer_copyright c-footer_copyright-mb">
+            © Copyright 2022
+            <br />
+            Abstract Studio Design, Inc.
+            <br />
+            ‍All rights reserved
           </div>
         </div>
       </div>

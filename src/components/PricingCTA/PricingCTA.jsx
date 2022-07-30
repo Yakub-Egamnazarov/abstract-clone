@@ -11,7 +11,7 @@ const PricingCTA = () => {
         <span className="text--gtsuper"> workflow</span>
       </h3>
       <Link to="/" className="button button--main">
-        View tPricing Plans
+        View Pricing Plans
       </Link>
     </div>
   );
