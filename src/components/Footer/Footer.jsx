@@ -42,30 +42,30 @@ const Footer = () => {
           </div>
           <div className="c-footer_col c-footer_col2">
             <h6 className="c-footer_col_title">Resources</h6>
-            {resources.map((link) => (
-              <Link to="/" className="c-footer_link">
+            {resources.map((link, i) => (
+              <Link to="/" className="c-footer_link" key={i}>
                 {link}
               </Link>
             ))}
           </div>
           <div className="c-footer_col c-footer_col3">
             <h6 className="c-footer_col_title">Company</h6>
-            {company.map((link) => (
-              <Link to="/" className="c-footer_link">
+            {company.map((link, i) => (
+              <Link to="/" className="c-footer_link" key={i}>
                 {link}
               </Link>
             ))}
             <h6 className="c-footer_col_title">Contact Us</h6>
-            {contactUs.map((link) => (
-              <Link to="/" className="c-footer_link">
+            {contactUs.map((link, i) => (
+              <Link to="/" className="c-footer_link" key={i}>
                 {link}
               </Link>
             ))}
           </div>
           <div className="c-footer_col c-footer_col4">
             <h6 className="c-footer_col_title">Social</h6>
-            {social.map((link) => (
-              <Link to="/" className="c-footer_link">
+            {social.map((link, i) => (
+              <Link to="/" className="c-footer_link" key={i}>
                 {link}
               </Link>
             ))}
