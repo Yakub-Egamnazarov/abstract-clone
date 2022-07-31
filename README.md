@@ -28,20 +28,28 @@ The following breakpoints added to the media queries:
 - max-width: 767px (tablet-portrait)
 - max-width: 479px (mobile)
 
-### 5. Section coming after the hero section
+### 5. Section coming after the hero
 
 To implement the sliding-up effect the following technique is used:
 
-- on the upper side of the actual section created pseudo-section, div element, to immitate some spacing
+- on the upper side of the actual section created pseudo-section, div element, to imitate some spacing
 - to the actual section, on the bottom side of hero, added _position: sticky_ property added
-- and with spacing SCSS utilites adjusted, the sliding-up effect is created
+- and with spacing SCSS utilities adjusted, the sliding-up effect is created
 
-Also created reusabel container SCSS components and spacing utilities like:
+Also created reusable container SCSS components and spacing utilities like:
 
 - .container-max
 - .col (.col-4-d) etc.
 - spacing-bottom-s (etc.)
 - z-9 (z-index: 9;)
+
+### 6. The other sections
+
+The rest of the sections used the same CSS properties for section classes, and pretty much repeating styles, so use utility classes for spacing buttons, containers, columns and typography. This helped to build the rest sections easily.
+
+### 7. The project completion.
+
+The project is consists of only main (home) page. I created a copy of Abstract website with the intension of learning React js. There is no intention of monetising this website under any circumstances. Only complex websites structures was the subject of interest
 
 ---
 
